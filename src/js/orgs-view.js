@@ -39,7 +39,7 @@ export default class OrgsView extends Component {
 
 		let { username } = this.props.params;
 
-		ajax(`https://api.github.com/users/${username}/orgs?access_token=15879f20a4f62309eac75ff6f01cea447cb02bcb`).then(data => {
+		ajax(`https://api.github.com/users/${username}/orgs`).then(data => {
 
 			this.setState({
 
